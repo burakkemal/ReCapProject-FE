@@ -1,0 +1,15 @@
+<div *ngIf="dataLoaded == false" class="spinner-border text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<table *ngIf="dataLoaded == true" class="table table-bordered">
+  <thead>
+    <th>Customers</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{ customer.companyName }}</td>
+      <td>{{ customer.userId }}</td>
+    </tr>
+  </tbody>
+</table>
