@@ -3,7 +3,6 @@ export interface RentalDto{
     brandName:string;
     rentDate:Date;
     returnDate:Date;
-    userName:string;
-    carId:number;
-    customerId:number;
+    userName:string;  
+    colorName:string;
 }

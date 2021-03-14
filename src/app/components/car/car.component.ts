@@ -5,7 +5,7 @@ import { CarService } from 'src/app/services/car.service';
 @Component({
   selector: 'app-car',
   templateUrl: './car.component.html',
-  styleUrls: ['./car.component.css'],
+  styleUrls: ['./car.component.css'], 
 })
 export class CarComponent implements OnInit {
   cars: Car[] = [];
@@ -19,8 +19,9 @@ export class CarComponent implements OnInit {
 
   getCars() {
     this.carService.getCars().subscribe(response=>{
-      this.cars = response.data
-      this.dataLoaded = true;
+      this.cars=response.data
+      this.dataLoaded=true
     })
+    }
   }
-}
+  

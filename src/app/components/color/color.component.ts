@@ -16,10 +16,11 @@ export class ColorComponent implements OnInit {
     this.getColors();
   }
 
-  getColors(){
+  getColors() {
     this.colorService.getColors().subscribe(response=>{
-      this.colors = response.data
-      this.dataLoaded = true;
+      this.colors=response.data
+      this.dataLoaded=true
     })
+    }
   }
-}
+
