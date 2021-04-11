@@ -13,14 +13,24 @@ ARAÇ DETAY VE RENT
 ÖDEME SAYFASI
 ![commit5](https://user-images.githubusercontent.com/77545526/114321218-55773080-9b22-11eb-85c8-b26151260cf2.png)
 
-
-
-
-![commit10](https://user-images.githubusercontent.com/77545526/114321270-a2f39d80-9b22-11eb-9cd4-ff12d31a4c33.png)
+LOGİN OLMAMIŞ ANA FORM GÖRÜNÜMÜ
 ![commit6](https://user-images.githubusercontent.com/77545526/114321208-5019e600-9b22-11eb-9416-206e940bf47d.png)
+
+LOGİN FORMU
 ![commit7](https://user-images.githubusercontent.com/77545526/114321209-514b1300-9b22-11eb-9470-8ebd04428c4b.png)
+
+DOĞRULAMA HATASI
 ![commit8](https://user-images.githubusercontent.com/77545526/114321210-514b1300-9b22-11eb-81fb-37b79367e5e7.png)
+
+GİRİŞ SAYFASI
 ![commit9](https://user-images.githubusercontent.com/77545526/114321211-51e3a980-9b22-11eb-943b-0b08f3e3dfed.png)
+
+FİNDEX PUANINA TAKILAN KİRALAMA İŞLEMİ
+![commit10](https://user-images.githubusercontent.com/77545526/114321270-a2f39d80-9b22-11eb-9cd4-ff12d31a4c33.png)
+
+
+
+
 
 
 
