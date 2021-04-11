@@ -1,3 +1,33 @@
+![commit6](https://user-images.githubusercontent.com/77545526/114321208-5019e600-9b22-11eb-9416-206e940bf47d.png)
+![commit7](https://user-images.githubusercontent.com/77545526/114321209-514b1300-9b22-11eb-9470-8ebd04428c4b.png)
+![commit8](https://user-images.githubusercontent.com/77545526/114321210-514b1300-9b22-11eb-81fb-37b79367e5e7.png)
+![commit9](https://user-images.githubusercontent.com/77545526/114321211-51e3a980-9b22-11eb-943b-0b08f3e3dfed.png)
+![commit1](https://user-images.githubusercontent.com/77545526/114321212-51e3a980-9b22-11eb-904e-18232f1882bd.png)
+![commit2](https://user-images.githubusercontent.com/77545526/114321214-5314d680-9b22-11eb-9d73-81283cac34f0.png)
+![commit3](https://user-images.githubusercontent.com/77545526/114321215-53ad6d00-9b22-11eb-831c-ad320e540dc3.png)
+![commit4](https://user-images.githubusercontent.com/77545526/114321216-54460380-9b22-11eb-8af3-3722aeee56fa.png)
+![commit5](https://user-images.githubusercontent.com/77545526/114321218-55773080-9b22-11eb-85c8-b26151260cf2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ReCapProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
