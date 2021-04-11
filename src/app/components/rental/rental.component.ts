@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
 import { RentalDto } from 'src/app/models/rentalDto';
 import { RentalService } from 'src/app/services/rental.service';
 
@@ -8,18 +8,22 @@ import { RentalService } from 'src/app/services/rental.service';
   templateUrl: './rental.component.html',
   styleUrls: ['./rental.component.css']
 })
-export class RentalComponent implements OnInit { 
-  rentalDtos:RentalDto[]=[];
-  dataLoaded = false ;  
-  constructor(private rentalService:RentalService) { }
-  ngOnInit(): void {
-    this.getRentals()
-  }
-  getRentals() {
-    this.rentalService.getRentalDetails().subscribe(response=>{
-      this.rentalDtos=response.data
-      this.dataLoaded=true
-    })
-    }
+export class RentalComponent implements OnInit {
 
-}
+ 
+  rentals:RentalDto[] = [];
+  dataLoaded =false;
+  constructor(private rentalService : RentalService,private toastr: ToastrService) { }
+
+  ngOnInit(): void {
+    this.getRentals();
+  } 
+
+  getRentals(){
+
+    this.rentalService.getRentals().subscribe(response =>{
+      this.rentals = response.data
+      this.dataLoaded =true
+    })
+    
+  }}

@@ -1,16 +1,22 @@
-<div *ngIf="dataLoaded == false" class="spinner-border text-info" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
+<table class="table table-striped table-active">
 
-<table *ngIf="dataLoaded == true" class="table table-bordered">
-  <thead>
-    <th>Rentals</th>
-    <th>Rent Date</th>
-    <th>Return Date</th>
+  <thead class="thead-light">
+      <tr>
+          <th>Marka</th>
+          <th>Renk</th>
+          <th>Müşteri</th>
+          <th>Kiralama Tarihi</th>
+          <th>Teslim Alma Tarihi</th>
+      </tr>
   </thead>
-  <tr *ngFor="let rentalDto of rentalDtos">
-    <td>{{ rentalDto.brandName }}</td>
-    <td>{{ rentalDto.userName }}</td>
-    <td>{{ rentalDto.Id }}</td>
+  <tbody>
+      <tr *ngFor="let rental of rentals">
+      <td>{{rental.brandName}}</td>
+      <td>{{rental.colorName}}</td>
+      <td>{{rental.firstName + " " +rental.lastName}}</td>
+      <td>{{rental.rentDate}}</td>
+      <td>{{rental.returnDate}}</td>
   </tr>
+  </tbody>
+  
 </table>

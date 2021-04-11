@@ -1,0 +1,44 @@
+<h5>
+    <mark>ARAÇLAR</mark>
+</h5>
+
+
+<div class="row">
+
+
+    <div class="card" *ngFor="let car of cars">
+
+
+        <img class="card-img-top" [src]="
+              car.images.length !== 0
+                ? imageUrl + car.images[0]
+                : imageUrl + defaultImage" alt="Card image cap">
+
+
+        <div class="card-body">
+
+            <h5 class="card-title">{{ car.description }}</h5>
+
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><mark>Id</mark> : {{ car.carId }}</li>
+                <li class="list-group-item">
+                    <mark>Marka</mark> : {{ car.brandName }}
+                </li>
+                <li class="list-group-item"><mark>Renk</mark> : {{ car.colorName }}</li>
+                <li class="list-group-item">
+                    <mark>Model</mark> : {{ car.modelYear }}
+                </li>
+                <li class="list-group-item">
+                    <mark>Günlük Kira </mark>: {{ car.dailyPrice }}
+                </li>
+            </ul>
+
+
+            <a href="#" routerLink="/cars/cardetails2/{{ car.carId }}" class="card-link btn btn-primary">İncele</a>
+
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,61 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Araç Ekle</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="carAddForm">
+                    <div class="mb-3">
+                        <label for="carName">Araç Adı</label>
+                        <div class="form-group">
+                            <input type="text" id="carName" formControlName="carName" class="form-control" placeholder="Araç Adı" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="colorId">Renk seç</label>
+                        <div class="col-sm-12">
+                            <select id="colorId" class="form-select" formControlName="colorId">
+                            <option [ngValue]="color.colorId" *ngFor="let color of colors">{{ color.colorName }}</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="brandId">Marka seç</label>
+                        <div class="col-sm-12">
+                            <select id="brandId" class="form-select" formControlName="brandId">
+                                <option [ngValue]="brand.brandId" *ngFor="let brand of brands">{{ brand.brandName }}</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="modelYear">Model yılı</label>
+
+                        <div class="form-group">
+                            <input type="number" id="modelYear" formControlName="modelYear" class="form-control" placeholder="Model yılı" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dailyPrice">Birim Fiyatı</label>
+
+                        <div class="form-group">
+                            <input type="number" id="dailyPrice" formControlName="dailyPrice" class="form-control" placeholder="Fiyatı" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description">Açıklaması</label>
+
+                        <div class="form-group">
+                            <input type="text" id="description" formControlName="description" class="form-control" placeholder="Açıklaması" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="cart-footer">
+                <button style="width: 100px; margin-left: 192px;" class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+        </div>
+    </div>
+
+</div>
